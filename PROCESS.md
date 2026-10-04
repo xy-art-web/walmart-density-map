@@ -10,4 +10,4 @@ I kept the hexagonal binning (`hexbin()`) spatial aggregation method using a cus
 
 ## Rejected
 
-I rejected rendering raw latitude and longitude coordinates directly on a standard rectangular grid. Unprojected geographic coordinates resulted in significant visual distortion, stretching northern states horizontally and misrepresenting spatial density across different latitudes. I replaced it with the Albers Equal Area Conic projection (`lat_1=29.5`, `lat_2=45.5`) to preserve accurate area proportions across the continental United States. Additionally, I rejected an earlier documentation draft that omitted what data was lost during visualization, explicitly adding that hexagonal binning sacrifices individual store locations in exchange for density clarity.
+I rejected using a traditional scatter plot with thousands of individual store dots. Standard scatter plots caused severe overplotting in major metropolitan areas, making the map look like a chaotic cluster of overlapping dots. I replaced it with hexagonal binning to represent local density cleanly.
