@@ -2,8 +2,6 @@
 
 Walmart is the largest retail chain in the United States, but its spatial footprint is far from evenly distributed. This repository processes thousands of store location coordinates across the contiguous United States, maps them using an Albers Equal Area projection, and generates a hexagonal binning density map to reveal how Walmart dominates specific geographic corridors.
 
-It is the submission for Assignment 2: one published dataset of geographical points, one high-density thematic visualization, and every data processing step documented.
-
 ![Walmart Store Density Map](out/walmart_map_with_graticules.png)
 
 ## The phenomenon
@@ -14,7 +12,6 @@ The visualization captures this national retail landscape in a single view:
 * **Hexagonal Binning**: Aggregates nearby store coordinates into hexagonal grids, preventing overplotting and visually emphasizing high-density retail clusters.
 * **Equal Area Projection**: Uses the Albers Equal Area Conic projection to ensure landmasses and store densities are rendered without latitude distortion.
 * **Geographic Graticules**: Overlays precise latitude and longitude gridlines to provide clear spatial reference points across the map.
-* **Inset Sub-maps**: Alaska (AK) and Hawaii (HI) are clearly outlined in the bottom-left corner to complete the 50-state geographical context.
 
 ## The source
 
