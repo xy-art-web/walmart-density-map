@@ -26,7 +26,7 @@ The complete data pipeline is contained in a single standalone Python script `us
 
 * `albers_projection(lon, lat)` converts geographic coordinates (longitude/latitude) into planar coordinates using the Albers Equal Area formula.
 * `hexbin(...)` aggregates coordinates into standard hexagonal grid cells and maps store counts to a purple-to-blue color scale.
-* `plot(...)` draws state boundaries, Alaska/Hawaii insets, and curvature-aligned latitude/longitude gridlines (`25°N` to `50°N`, `120°W` to `70°W`).
+* `plot(...)` draws state boundaries, curvature-aligned latitude/longitude gridlines (`25°N` to `50°N`, `120°W` to `70°W`).
 
 The script declares its own dependencies inline, requiring no manual environment configuration.
 
